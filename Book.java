@@ -21,9 +21,9 @@ class Book
         author = bookAuthor;
         title = bookTitle;
     }
-
+    
     /** 
-     * Acessor Method for the author field (first part of exercise 2.84) 
+     * Acessor Method for the author field (first part of exercise 2.83) 
      */
     public String getAuthor()
     {  
@@ -31,18 +31,28 @@ class Book
     }
     
     /** 
-     * Acessor Method for the title field (second part of exercise 2.84) 
+     * Acessor Method for the title field (second part of exercise 2.83) 
      */
     public String getTitle()
     {  
         return title;
     }
 
-    /**  
-     * Acessor method for printing the author and title field (exercise 2.87)
+     /**  
+     * Acessor method for printing the author (exercise 2.84)
      */
-    public void printDetails()
+    public void printAuthor()
     {
-        System.out.println("Title: " + title + ", Author: " + author);
+        System.out.println("Author: " + author);
     }
+    
+     /**  
+     * Acessor method for printing the title field (exercise 2.84)
+     */
+    public void printTitle()
+    {
+        System.out.println("Title: " + title);
+    }
+    
+
 }
