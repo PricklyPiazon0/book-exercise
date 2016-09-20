@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;      //added new field pages to contain the number of pages in the book (exericse 2.85)
     private String refNumber;  //added new field ferNumber to contain the refence number for a library (exercise 2.88)
+    private int borrowed;   //added new field borrowed to contain the number of times the book has been borrowed (exercise 2.91)
 
     /**
      * Set the author and title fields when this object
@@ -24,6 +25,7 @@ class Book
         title = bookTitle;
         pages = pageNumber;        //added the new field (pages) initiator in the constructor (exercise 2.85)
         refNumber = "";            //added the new field (refNumber) initiator in the constructor (exercise 2.88)
+        borrowed = 0;              //added the new field (borrowed) inititator in the constructor (exercise 2.91)
     }
     
     /** 
@@ -80,6 +82,7 @@ class Book
     public void printDetails()
     {
         System.out.println("Title: " + title + ", Author: " + author + ", Pages: " + pages);
+        System.out.println("This book has been borrowed " + borrowed + " time(s)");    //method modified to display field borrowed (exercise 2.91)
         if (refNumber.length() > 0)
         {
             System.out.println("Reference Number: " + refNumber); //method modified to include refNumber field (exercise 2.89)
@@ -113,4 +116,21 @@ class Book
     {  
         return refNumber;
     }
+    
+   /**
+    * Mutator method for borrowed field, calling this method increments borrowed by one (exercise 2.91)
+    */
+    public void borrow()
+    {
+        borrowed += 1;
+    }
+    
+   /** 
+    *Acessor method for borrowed field (exercise 2.91)
+    */
+   public int getBorrowed()
+   {
+       return borrowed;
+   }
+   
 }
