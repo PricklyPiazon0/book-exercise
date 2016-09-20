@@ -64,12 +64,20 @@ class Book
         System.out.println("Title: " + title);
     }
     
+    /**  
+     * Acessor method for printing the pages field (exercise 2.87)
+     */
+    public void printPages()
+    {
+        System.out.println("Pages: " + pages);
+    }
+    
      /**  
-     * Acessor method for printing the author and title field (exercise 2.87)
+     * Acessor method for printing the author, title, and pages field (exercise 2.87)
      */
     public void printDetails()
     {
-        System.out.println("Title: " + title + ", Author: " + author);
+        System.out.println("Title: " + title + ", Author: " + author + ", Pages: " + pages);
     }
 
 }
