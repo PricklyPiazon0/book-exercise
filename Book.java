@@ -12,6 +12,7 @@ class Book
     private String author;
     private String title;
     private int pages;      //added new field pages to contain the number of pages in the book (exericse 2.85)
+    private String refNumber;  //added new field ferNumber to contain the refence number for a library (exercise 2.88)
 
     /**
      * Set the author and title fields when this object
@@ -21,7 +22,8 @@ class Book
     {
         author = bookAuthor;
         title = bookTitle;
-        pages = pageNumber;        //added the new field initiator in the constructor (exercise 2.85)
+        pages = pageNumber;        //added the new field (pages) initiator in the constructor (exercise 2.85)
+        refNumber = "";            //added the new field (refNumber) initiator in the constructor (exercise 2.88)
     }
     
     /** 
@@ -80,4 +82,20 @@ class Book
         System.out.println("Title: " + title + ", Author: " + author + ", Pages: " + pages);
     }
 
+    
+    /**
+     * Mutator method for changing the library refernce number field (exercise 2.88)
+     */
+    public void setRefNumber(String ref)
+    {
+        refNumber = ref;
+    }
+    
+   /** 
+     * Acessor Method for the refNumber field (exercise 2.88) 
+     */
+    public String getRefNumber()
+    {  
+        return refNumber;
+    }
 }
