@@ -14,18 +14,20 @@ class Book
     private int pages;      //added new field pages to contain the number of pages in the book (exericse 2.85)
     private String refNumber;  //added new field ferNumber to contain the refence number for a library (exercise 2.88)
     private int borrowed;   //added new field borrowed to contain the number of times the book has been borrowed (exercise 2.91)
+    private boolean courseText;  //added a new field courseText to contain the boolean value of whether the book is being used as a text for a class (exercise 2.92)
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int pageNumber)
+    public Book(String bookAuthor, String bookTitle, int pageNumber, boolean isTextbook)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = pageNumber;        //added the new field (pages) initiator in the constructor (exercise 2.85)
         refNumber = "";            //added the new field (refNumber) initiator in the constructor (exercise 2.88)
         borrowed = 0;              //added the new field (borrowed) inititator in the constructor (exercise 2.91)
+        courseText = isTextbook;   //added the new field (courseText) initiator in the constructor (exercise 2.92)
     }
     
     /** 
@@ -133,4 +135,11 @@ class Book
        return borrowed;
    }
    
+    /** 
+     * Acessor Method for the courseText field (exercise 2.92) 
+     */
+    public boolean isCourseText()
+    {  
+        return courseText;
+    }
 }

@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=bookAuthor\ bookTitle\ pageNumber
-comment0.target=Book(java.lang.String,\ java.lang.String,\ int)
+comment0.params=bookAuthor\ bookTitle\ pageNumber\ isTextbook
+comment0.target=Book(java.lang.String,\ java.lang.String,\ int,\ boolean)
 comment0.text=\r\n\ Set\ the\ author\ and\ title\ fields\ when\ this\ object\r\n\ is\ constructed.\r\n
 comment1.params=
 comment1.target=java.lang.String\ getAuthor()
@@ -11,6 +11,9 @@ comment10.text=\r\n\ Mutator\ method\ for\ borrowed\ field,\ calling\ this\ meth
 comment11.params=
 comment11.target=int\ getBorrowed()
 comment11.text=\ \r\nAcessor\ method\ for\ borrowed\ field\ (exercise\ 2.91)\r\n
+comment12.params=
+comment12.target=boolean\ isCourseText()
+comment12.text=\ \r\n\ Acessor\ Method\ for\ the\ courseText\ field\ (exercise\ 2.92)\ \r\n
 comment2.params=
 comment2.target=java.lang.String\ getTitle()
 comment2.text=\ \r\n\ Acessor\ Method\ for\ the\ title\ field\ (second\ part\ of\ exercise\ 2.83)\ \r\n
@@ -35,4 +38,4 @@ comment8.text=\r\n\ Mutator\ method\ for\ changing\ the\ library\ refernce\ numb
 comment9.params=
 comment9.target=java.lang.String\ getRefNumber()
 comment9.text=\ \r\n\ Acessor\ Method\ for\ the\ refNumber\ field\ (exercise\ 2.88)\ \r\n
-numComments=12
+numComments=13
