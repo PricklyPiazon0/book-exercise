@@ -37,4 +37,12 @@ class Book
     {  
         return title;
     }
+
+    /**  
+     * Acessor method for printing the author and title field (exercise 2.87)
+     */
+    public void printDetails()
+    {
+        System.out.println("Title: " + title + ", Author: " + author);
+    }
 }
