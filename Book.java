@@ -11,15 +11,17 @@ class Book
     // The fields.
     private String author;
     private String title;
+    private int pages;      //added new field pages to contain the number of pages in the book (exericse 2.85)
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle)
+    public Book(String bookAuthor, String bookTitle, int pageNumber)
     {
         author = bookAuthor;
         title = bookTitle;
+        pages = pageNumber;        //added the new field initiator in the constructor (exercise 2.85)
     }
     
     /** 
@@ -38,6 +40,14 @@ class Book
         return title;
     }
 
+    /** 
+     * Acessor Method for the pages field (second part of exercise 2.85) 
+     */
+    public int getPages()
+    {  
+        return pages;
+    }
+    
      /**  
      * Acessor method for printing the author (exercise 2.84)
      */
@@ -54,5 +64,12 @@ class Book
         System.out.println("Title: " + title);
     }
     
+     /**  
+     * Acessor method for printing the author and title field (exercise 2.87)
+     */
+    public void printDetails()
+    {
+        System.out.println("Title: " + title + ", Author: " + author);
+    }
 
 }
