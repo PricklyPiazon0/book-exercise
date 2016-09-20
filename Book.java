@@ -92,11 +92,18 @@ class Book
 
     
     /**
-     * Mutator method for changing the library refernce number field (exercise 2.88)
+     * Mutator method for changing the library refernce number field if it is of an appropriate value (exercise 2.90)
      */
     public void setRefNumber(String ref)
     {
-        refNumber = ref;
+       if (ref.length() >= 3)
+       {
+           refNumber = ref;
+       }
+       else
+       {
+           System.out.println("iputted reference number is too short, it must be three characters or longer");
+       }
     }
     
    /** 
